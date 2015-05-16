@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Обо мне</title>
+    <link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
+    <link href="bower/normalize.css/normalize.css" rel="stylesheet">
+    <link href="fonts/fira/fira.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="fonts/fira/fira.css" rel="stylesheet">
+    <script src="js/modernizr.custom.25643.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper-header">
+            <div class="logo">
+                <a href="/" class="header-logo-link">
+                    <img src="img/logo.png" alt="logo" class="logo-img">
+                    <span class="header-logo-text">Сайт портфолио</span>
+                </a>
+            </div>
+            <ul class="social-list">
+                <li class="social-img social-vk">
+                    <a href="#"><span class="social-text">Вконте</span></a>
+                </li>
+                <li class="social-img social-twit">
+                    <a href="#"><span class="social-text">Твиттерок</span></a>
+                </li>
+                <li class="social-img social-fb">
+                    <a href="#"><span class="social-text">Фейсбучок</span></a>
+                </li>
+                <li class="social-img social-gh">
+                    <a href="#"><span class="social-text">Гитхабик</span></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <div class="wrapper">
+            <div class="sidebar">
+                <div class="sidebar-about">
+                    <ul class="about-list">
+                        <li><a href="index.html" class="second">Обо мне</a></li>
+                        <li><a href="projects.html">Мои работы</a></li>
+                        <li><a href="about.html" class="active">Связаться со мной</a></li>
+                    </ul>
+                </div>
+                <div class="sidebar-contact">
+                    <span class="title-sidebar">Контакты</span>
+                    <ul class="contact-list">
+                        <li class="mail"><a href="mailto:vadim@loftblog.ru">vadim@loftblog.ru</a></li>
+                        <li class="tel"><a href="tel:79313835904">+79313835904</a></li>
+                        <li class="skype"><a href="skype:mail-10">mail-10</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content-block">
+                    <div class="cont-head"><span class="contact-h">У вас интересный проект? Напишите мне</span></div>
+                    <div class="cont-form clearfix">
+                        <form class="form-cont clearfix form contact-form" id="contact-me" method="post">
+                            <div class="clearfix row-frm">
+                                <div class="name-form clearfix">
+                                    <label for="check1" class="form-txt">Имя</label>
+                                    <input type="text" name="name" class="input" id="name" placeholder="Как к вам обращаться" qtip-content="Вы не ввели имя">
+                                </div>
+                                <div class="email-form clearfix">
+                                    <label for="check2" class="form-txt">E-mail</label>
+                                    <!-- <div class="tooltip-right">
+                                        <span class="toolcont-right">Вы не ввели e-mail</span>
+                                    </div> -->
+                                    <input type="email" name="email" class="input" id="email" placeholder="Куда мне писать" qtip-position="right" qtip-content="Вы не ввели email">
+                                </div>
+                            </div>
+                            <div class="massage-form clearfix">
+                                <label for="check3" class="form-txt">Сообщение</label>
+                                <!-- <div class="tooltip-left">
+                                    <span class="toolcont-left">Ваш вопрос</span>
+                                </div> -->
+                                <textarea name="message" id="message" class="textarea" rows="3" placeholder="Кратко в чем суть" qtip-content="Что вы от меня хотите?"></textarea>
+                            </div>
+                            <span class="form-txt">Введите код, указанный на картинке</span>
+                            <div class="capcha clearfix">
+                                <div class="capcha-img">
+                                    <img src="img/capcha.png" height="46" width="146" alt="capcha">
+                                </div>
+                                <div class="capcha-cod">
+                                    <!-- <div class="tooltip-right">
+                                        <span class="toolcont-right">Вы не ввели код</span>
+                                    </div> -->
+                                    <input type="text" name="captcha" class="input input-captcha pull-right" id="captcha" placeholder="Введите код" qtip-position="right" qtip-content="Вы не ввели код">
+                                </div>
+                            </div>
+                            <div class="submit-form">
+                                <input class="form-button" type="submit" name="submit" id="submit" value="Отправить">
+                            </div>
+                            <div class="reset-form">
+                                <input type="reset" class="form-button" name="reset" id="reset" value="Очистить">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="wrapper">
+            <div class="login"><a href="login.html" class="footer-log">Войти</a></div>
+            <span class="footer-txt">© 2015. Этой мой сайт, пожалуйста не копируйте и не воруйте его</span>
+        </div>
+    </footer>
+</body>
+<script src="bower/jquery/dist/jquery.js"></script>
+<script src="bower/qtip2/jquery.qtip.js"></script>
+<script src="js/main.js"></script>
+<script src="js/validate.js"></script>
+<script src="js/placeholders.js"></script>
+<script src="js/contact_me.js"></script>
+
+</html>
